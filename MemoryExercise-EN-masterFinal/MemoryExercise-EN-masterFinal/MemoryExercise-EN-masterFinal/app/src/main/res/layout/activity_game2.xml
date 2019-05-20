@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.androidtown.memoryexcercise.MainActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623">
+
+        <ImageButton
+            android:id="@+id/c0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/oval1"
+            app:layout_constraintBottom_toTopOf="@+id/c3"
+            app:layout_constraintRight_toLeftOf="@+id/c1" />
+
+        <ImageView
+            android:id="@+id/answer0"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/checked"
+            android:visibility="invisible"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/c3"
+            app:layout_constraintRight_toLeftOf="@+id/c1"/>
+
+        <ImageButton
+            android:id="@+id/c1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+
+            android:src="@drawable/oval1"
+            app:layout_constraintBottom_toTopOf="@+id/c4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/answer1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/checked"
+            android:visibility="invisible"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/c4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/c2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+
+            android:background="#00000000"
+            android:scaleType="fitXY"
+
+            android:src="@drawable/oval1"
+            app:layout_constraintBottom_toTopOf="@+id/c5"
+            app:layout_constraintLeft_toRightOf="@+id/c1" />
+
+        <ImageView
+            android:id="@+id/answer2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/checked"
+            android:visibility="invisible"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/c5"
+            app:layout_constraintLeft_toRightOf="@+id/c1"/>
+
+        <ImageButton
+            android:id="@+id/c3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/oval1"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/c4"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/answer3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/checked"
+            android:visibility="invisible"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/c4"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.5"/>
+
+
+
+        <ImageButton
+            android:id="@+id/c4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#00000000"
+
+
+            android:scaleType="fitXY"
+            android:src="@drawable/oval1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/answer4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/checked"
+            android:visibility="invisible"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageButton
+            android:id="@+id/c5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/oval1"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/c4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/answer5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/checked"
+            android:visibility="invisible"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/c4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+
+        <ImageButton
+            android:id="@+id/c6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+
+            android:src="@drawable/oval1"
+            app:layout_constraintRight_toLeftOf="@+id/c7"
+            app:layout_constraintTop_toBottomOf="@+id/c3" />
+
+        <ImageView
+            android:id="@+id/answer6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/checked"
+            android:visibility="invisible"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintRight_toLeftOf="@+id/c7"
+            app:layout_constraintTop_toBottomOf="@+id/c3" />
+
+        <ImageButton
+            android:id="@+id/c7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/oval1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c4" />
+
+        <ImageView
+            android:id="@+id/answer7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/checked"
+            android:visibility="invisible"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c4" />
+
+
+
+        <ImageButton
+            android:id="@+id/c8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+
+            android:src="@drawable/oval1"
+            app:layout_constraintLeft_toRightOf="@+id/c7"
+            app:layout_constraintTop_toBottomOf="@+id/c5" />
+
+        <ImageView
+            android:id="@+id/answer8"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/checked"
+            android:visibility="invisible"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toRightOf="@+id/c7"
+            app:layout_constraintTop_toBottomOf="@+id/c5" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Remember blinking circles"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    />
+
+    <Button
+        android:id="@+id/nextbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLayout"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintLeft_toRightOf="@+id/homebtn"/>
+
+    <Button
+        android:id="@+id/homebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:text="Home"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLayout"
+        app:layout_constraintStart_toStartOf="@+id/buttonLayout"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="After 3 blinks, the problem will appear"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="120sp"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Tried: 0 / 3"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
