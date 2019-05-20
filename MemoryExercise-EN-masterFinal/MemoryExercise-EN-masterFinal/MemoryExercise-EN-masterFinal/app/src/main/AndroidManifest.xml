@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.androidtown.memoryexcercise">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Excercise1Activity" />
+        <activity android:name=".Game2Activity" />
+        <activity android:name=".alphabet_lv2" />
+        <activity android:name=".alphabet_lv3" />
+        <activity android:name=".alphabet_lv4" />
+        <activity android:name=".NumRemember" />
+        <activity android:name=".Correct" />
+        <activity android:name=".Incorrect" />
+        <activity android:name=".NumRemeberQuiz" />
+        <activity android:name=".excercise4Activity" />
+        <activity android:name=".excercise4Activity_first" />
+        <activity android:name=".exercise4Activity_lv2" />
+        <activity android:name=".Game5Activity" />
+        <activity android:name=".CheckAnswer" />
+        <activity android:name=".activity_stageSelect" />
+        <activity android:name=".LevelSelect" />
+        <activity android:name=".zoo_long_term" />
+        <activity android:name=".zoo_long_term_lv2" />
+        <activity android:name=".zoo_long_term_answering" />
+        <activity android:name=".zoo_long_term_answering_lv2" />
+        <activity android:name=".long_term_main" />
+        <activity android:name=".zoo_long_term_lv3" />
+        <activity android:name=".zoo_long_term_answering_lv3" />
+        <activity android:name=".short_term_main"></activity>
+        <activity android:name=".NameMatching"></activity>
+    </application>
+
+</manifest>
