@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/excercise1">
+
+    <!-- 첫화면 질문 -->
+    <TextView
+        android:id="@+id/ex1Question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Remember images"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+
+    <ImageView
+        android:id="@+id/ex1Image3"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_above="@id/pointText"
+        android:layout_marginLeft="-70dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toRightOf="@id/ex1Image"
+        android:scaleType="fitXY"
+        android:src="@drawable/dog1"
+        android:visibility="invisible" />
+
+
+    <!-- 두번째 화면 질문 -->
+    <TextView
+        android:id="@+id/ex1Question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Respond to the questions below"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <!-- 이미지 문제 -->
+    <ImageView
+        android:id="@+id/ex1Image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_above="@+id/pointText"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="left"
+        android:scaleType="fitXY"
+        android:src="@drawable/dog1" />
+
+    <ImageView
+        android:id="@+id/ex1Image2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="right"
+        android:layout_above="@+id/pointText"
+        android:layout_centerInParent="true"
+android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dog1" />
+
+
+    <!-- 카운트 다운-->
+    <TextView
+        android:id="@+id/pointText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/countdown"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Questions will be asked\nin 3 sec"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <!-- 두번째 질문 -->
+    <TextView
+        android:id="@+id/ex1Question3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/ex1Image"
+        android:layout_centerHorizontal="true"
+        android:text="Does the image match with\nprevious images?"
+        android:textSize="25dp"
+        android:gravity = "center"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible" />
+
+
+
+    <TextView
+        android:id="@+id/checktime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ex1Question2"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:text="The problem is 7 seconds away."
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- yes or no 버튼 -->
+    <LinearLayout
+        android:id="@+id/answerLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/ex1Question3"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/ex1YesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yes"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ex1NoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
