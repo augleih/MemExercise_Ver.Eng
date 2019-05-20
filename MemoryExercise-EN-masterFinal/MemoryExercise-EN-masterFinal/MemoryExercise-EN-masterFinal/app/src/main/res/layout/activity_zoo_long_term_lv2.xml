@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#ffffff">
+
+    <TextView
+        android:id = "@+id/suggestQuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Remember the suggested animal and object below to answer the question."
+        android:textSize = "30sp"
+        android:gravity = "center"
+        android:layout_alignParentTop = "true"
+        android:layout_marginTop = "40dp"
+        android:layout_centerHorizontal = "true"/>
+
+    <ImageView
+        android:id="@+id/backAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/taskText"
+        android:src="@drawable/longlion"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/taskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startBtn"
+        android:layout_marginTop = "20dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id = "@+id/timeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = "50sp"
+        android:textStyle = "bold"
+        android:layout_centerInParent = "true"
+        android:gravity = "center"
+        />
+    <Button
+        android:id = "@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "30dp"
+        android:layout_above = "@id/startBtn2"
+        android:textAllCaps = "false"
+        android:text = "TEST MODE: 10 SECS"
+        android:textColor = "#ff77"
+        android:textSize = "25sp"
+        android:layout_marginBottom = "5dp"
+        android:layout_centerHorizontal = "true"/>
+    <Button
+        android:id = "@+id/startBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps = "false"
+        android:text = "Answer tomorrow"
+        android:textSize = "25sp"
+        android:layout_alignParentBottom = "true"
+        android:layout_marginBottom = "40dp"
+        android:layout_centerHorizontal = "true" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/startBtn"
+        android:layout_centerHorizontal="true"
+        android:text="TEST MODE: CANCEL"
+        android:visibility = "invisible"
+        android:textAllCaps="false"
+        android:textColor="#ff77" />
+</RelativeLayout>

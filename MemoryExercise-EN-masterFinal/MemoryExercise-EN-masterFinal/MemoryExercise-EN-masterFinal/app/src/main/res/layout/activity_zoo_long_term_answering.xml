@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#ffffff">
+
+    <TextView
+        android:id = "@+id/suggestQuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Remember yesterday's suggestion\n(Animal)"
+        android:textSize = "30sp"
+        android:gravity = "center"
+        android:layout_alignParentTop = "true"
+        android:layout_marginTop = "40dp"
+        android:layout_centerHorizontal = "true"/>
+
+    <TextView
+        android:id="@+id/taskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suggestQuest"
+        android:layout_marginTop="100dp"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_below = "@id/taskText"
+        android:layout_marginTop = "40dp"
+        android:id="@+id/ansGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent = "true"
+        >
+        <Button
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent = "true"
+            android:layout_alignParentTop = "true"
+            android:layout_alignParentLeft = "true"
+            android:layout_marginLeft = "60dp"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:background = "#ffffff"/>
+
+        <Button
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent = "true"
+            android:layout_alignParentTop = "true"
+            android:layout_alignParentRight = "true"
+            android:layout_marginRight = "60dp"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:background = "#ffffff"/>
+
+        <Button
+            android:id="@+id/answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent = "true"
+            android:layout_below = "@+id/answer1"
+            android:layout_marginTop = "30dp"
+            android:layout_alignParentLeft = "true"
+            android:layout_marginLeft = "60dp"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:background = "#ffffff"/>
+
+        <Button
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent = "true"
+            android:layout_alignParentRight = "true"
+            android:layout_below = "@+id/answer2"
+            android:layout_marginTop = "30dp"
+            android:layout_marginRight = "60dp"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:background = "#ffffff"/>
+    </RelativeLayout>
+</RelativeLayout>
